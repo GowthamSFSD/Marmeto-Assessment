@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Marmeto Shoping Website</title>
+  </head>
+
+  <body>
+    <div class="app-container">
+      <div class="responsive-container">
+        <h1 class="main-heading">SELECT YOUR CHOICE</h1>
+        <div class="tabs">
+          <button class="tablinks" onclick="openCategory(event, 'men')">
+            Men
+          </button>
+          <button class="tablinks" onclick="openCategory(event, 'women')">
+            Women
+          </button>
+          <button class="tablinks" onclick="openCategory(event, 'kids')">
+            Kids
+          </button>
+        </div>
+        <div id="men" class="tabcontent"></div>
+        <div id="women" class="tabcontent"></div>
+        <div id="kids" class="tabcontent"></div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

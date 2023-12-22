@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f9f1e2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tablinks {
+  background-color: #25262a;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 2px solid #ccc;
+  width: 90%;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+  background-color: #fdfaf7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 70px;
+  height: auto;
+}
+
+.img-container {
+  position: relative;
+}
+
+.badge {
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #fff;
+  color: #25262a;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 14px;
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Bree Serif";
+}
+
+.orginal-price {
+  text-decoration: line-through;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.discount {
+  color: #388e3c;
+  font-weight: 900;
+}
+
+.button {
+  background-color: #25262a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+#change {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/*Tablet styles (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-heading {
+    font-size: 30px;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  .tablinks {
+    width: 26%;
+    font-size: 24px;
+  }
+
+  .tabcontent {
+    width: 90%;
+  }
+
+  .product-card {
+    width: 40%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .tablinks {
+    margin: 0 10px;
+  }
+}
+
+/* Desktop styles (Above 1025px) */
+@media screen and (min-width: 1025px) {
+  .app-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .responsive-container {
+    width: 95%;
+  }
+
+  .main-heading {
+    font-size: 34px;
+  }
+
+  .tabs {
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .tablinks {
+    width: 22%;
+    margin: 0 10px;
+    font-size: 22px;
+  }
+
+  .product-card {
+    width: 19%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .tabcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
